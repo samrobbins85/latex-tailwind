@@ -1,0 +1,4 @@
+@import url("https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
