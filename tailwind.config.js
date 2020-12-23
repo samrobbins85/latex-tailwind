@@ -367,11 +367,10 @@ components = {
 module.exports = {
 	purge: [
 		"./components/**/*.{js,ts,jsx,tsx}",
-		"./pages/**/*.{js,ts,jsx,tsx}",
+		"./pages/**/*.{js,ts,jsx,tsx,mdx}",
 	],
 	variants: {},
 	plugins: [
-		// require('@tailwindcss/typography'),
 		plugin(function ({ addBase, addUtilities, addComponents, theme }) {
 			addBase({
 				"@font-face": [
