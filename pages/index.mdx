@@ -1,6 +1,6 @@
 <div className="latex-style">
 
-# Hello
+# <span className="latex">L<span>a</span>T<span>e</span>X</span> Tailwind
 
 <p className="author">Sam Robbins</p>
 
@@ -8,11 +8,40 @@
 
 ## Abstract
 
-This almost class-less CSS library turns your HTML document into a website that looks like a LaTeX document. Write semantic HTML, use the `tailwind` plugin provided
+This almost class-less CSS library turns your HTML document into a website that looks like a LaTeX document.
 
 </div>
 
+## Usage
+
+To install this, run
+
+```sh
+npm install latex-tailwind
+```
+
+Then in your `tailwind.config.js`, add it as a plugin like this
+
+```js
+module.exports = {
+	//...
+	plugins: [require("latex-tailwind")],
+};
+```
+
+Then add `latex-style` to the outermost div you want to have LaTeX style
+
+## Inspiration
+
+This has been inspired by [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography) and [LaTeX.css](https://latex.now.sh/), with many of the styles being taken directly from the latter, and a few of the list styles being taken from the former.
+
+## Source
+
+The source code of this project can be found at [samrobbins85/latex-tailwind](https://github.com/samrobbins85/latex-tailwind)
+
 ## Specific classes
+
+`theorem` class:
 
 <div className="theorem">
 
@@ -20,11 +49,15 @@ The real numbers are uncountable $\mathbb{R}$
 
 </div>
 
+`proof` class:
+
 <div className="proof">
 
 If $\mathbb{R}$ is countable, then $[0,1]$ is countable
 
 </div>
+
+`lemma` class:
 
 <div className="lemma">
 
@@ -32,11 +65,19 @@ An even number plus an even number is an even number
 
 </div>
 
+`definition` class:
+
 <div className="definition">
 
 A definition is a statement
 
 </div>
+
+Also, as a nice little extra, you can style the <span className="latex">L<span>a</span>T<span>e</span>X</span> logo by typing
+
+```html
+<span class="latex">L<span>a</span>T<span>e</span>X</span>
+```
 
 ## General Markdown
 

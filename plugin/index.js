@@ -360,6 +360,21 @@ components = {
 		fontSize: "1rem",
 		marginBottom: "-0.2rem",
 	},
+	".latex span": {
+		textTransform: "uppercase",
+		lineHeight: "1ex",
+		"&:nth-child(1)": {
+			fontSize: "0.75em",
+			verticalAlign: "0.28em",
+			marginLeft: "-0.48em",
+			marginRight: "-0.15em",
+		},
+		"&:nth-child(2)": {
+			verticalAlign: "-0.5ex",
+			marginLeft: "-0.1667em",
+			marginRight: "-0.125em",
+		},
+	},
 };
 
 module.exports = plugin(function ({ addBase, addUtilities, addComponents }) {
