@@ -31,6 +31,15 @@ module.exports = {
 
 Then add `latex-style` to the outermost div you want to have LaTeX style
 
+If you also want to have syntax highlighting then you can use the `latex-tailwind-syntax` plugin by extending your `tailwind.config.js` to look like this
+
+```js
+module.exports = {
+	//...
+	plugins: [require("latex-tailwind"), require("latex-tailwind-syntax")],
+};
+```
+
 ## Inspiration
 
 This has been inspired by [Tailwind CSS Typography](https://github.com/tailwindlabs/tailwindcss-typography) and [LaTeX.css](https://latex.now.sh/), with many of the styles being taken directly from the latter, and a few of the list styles being taken from the former.
