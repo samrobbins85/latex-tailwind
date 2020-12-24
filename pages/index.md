@@ -31,14 +31,20 @@ module.exports = {
 
 Then add `latex-style` to the outermost div you want to have LaTeX style
 
-If you also want to have syntax highlighting then you can use the `latex-tailwind-syntax` plugin by extending your `tailwind.config.js` to look like this
+If you also want to have syntax highlighting with Prism.js then you can use the `latex-tailwind-syntax` plugin by extending your `tailwind.config.js` to look like this
 
 ```js
 module.exports = {
 	//...
+	purge: {
+		//...
+		layers: ["base", "utilities"],
+	},
 	plugins: [require("latex-tailwind"), require("latex-tailwind-syntax")],
 };
 ```
+
+Excluding components from the layers to purge is important as Tailwind doesn't see the classes created by Prism
 
 ## Inspiration
 
