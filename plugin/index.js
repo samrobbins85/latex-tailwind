@@ -419,15 +419,6 @@ var base_output = {
 				'url("https://fonts.cdnfonts.com/s/18083/cmuntt.woff") format("woff")',
 		},
 	],
-	".latex-style": {
-		fontFamily: "Latin Modern",
-		lineHeight: "1.8",
-		maxWidth: "80ch",
-		margin: "0 auto",
-		padding: "2rem 1.25rem",
-		counterReset: "theorem definition sidenote-counter lemma",
-		color: "hsl(0, 5%, 10%)",
-	},
 	...prefix(base, ".latex-style "),
 };
 
@@ -568,7 +559,18 @@ const syntax_components = {
 	},
 };
 
-var components_output = prefix(components, ".latex-style ");
+var components_output = {
+	".latex-style": {
+		fontFamily: "Latin Modern",
+		lineHeight: "1.8",
+		maxWidth: "80ch",
+		margin: "0 auto",
+		padding: "2rem 1.25rem",
+		counterReset: "theorem definition sidenote-counter lemma",
+		color: "hsl(0, 5%, 10%)",
+	},
+	...prefix(components, ".latex-style "),
+};
 
 module.exports = plugin(function ({
 	addBase,
