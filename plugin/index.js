@@ -58,7 +58,7 @@ const base = {
 		marginTop: "1em",
 	},
 	code: {
-		fontSize: "85%",
+		fontFamily: "CMU Typewriter Text !important",
 	},
 	pre: {
 		fontSize: "85%",
@@ -67,9 +67,9 @@ const base = {
 		overflow: "auto",
 		borderRadius: "4px",
 		background: "hsl(210, 28%, 93%)",
+		fontFamily: "CMU Typewriter Text !important",
 	},
 	"pre code": {
-		fontSize: "95%",
 		position: "relative",
 	},
 	kbd: {
@@ -411,6 +411,14 @@ module.exports = plugin(function ({ addBase, addUtilities, addComponents }) {
 				"font-display": "swap",
 				src:
 					'url("https://cdn.jsdelivr.net/gh/vincentdoerig/latex-css/fonts/LM-bold-italic.ttf") format("truetype"), url("https://cdn.jsdelivr.net/gh/vincentdoerig/latex-css/fonts/LM-bold-italic.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/vincentdoerig/latex-css/fonts/LM-bold-italic.woff2") format("woff2")',
+			},
+			{
+				"font-family": "'CMU Typewriter Text'",
+				"font-style": "normal",
+				"font-weight": "500",
+				"font-display": "swap",
+				src:
+					'url("https://fonts.cdnfonts.com/s/18083/cmuntt.woff") format("woff")',
 			},
 		],
 		".latex-style": {

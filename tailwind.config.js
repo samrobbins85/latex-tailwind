@@ -4,5 +4,5 @@ module.exports = {
 		"./pages/**/*.{js,ts,jsx,tsx,mdx}",
 	],
 	variants: {},
-	plugins: [require("./plugin")],
+	plugins: [require("./plugin"), require("latex-tailwind-syntax")],
 };
