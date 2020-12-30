@@ -1,8 +1,12 @@
 {
 	"name": "latex-tailwind",
 	"description": "A Tailwind CSS plugin for automatically styling plain HTML content with defaults to look like a LaTeX document",
-	"version": "2.0.3",
+	"version": "2.0.4",
 	"license": "MIT",
+	"repository": {
+	    "type": "git",
+	    "url": "https://github.com/samrobbins85/latex-tailwind.git"
+	  },
 	"scripts": {
 		"dev": "next",
 		"build": "next build",
