@@ -146,6 +146,8 @@ Now I'm going to show you an example of an unordered list to make sure that look
 
 And that's the end of this section.
 
+![](https://res.cloudinary.com/samrobbins/image/upload/v1600161649/Desktop-1_xgu0vy.png "An example page for learning to code")
+
 ## What if we stack headings?
 
 ### We should make sure that looks good, too.

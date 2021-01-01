@@ -26,6 +26,9 @@ exports.base = {
 		maxWidth: "100%",
 		height: "auto",
 		display: "block",
+		boxShadow: "5px 5px",
+		margin: "10px",
+		border: "1px solid",
 	},
 	input: {
 		font: "inherit",
