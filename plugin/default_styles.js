@@ -29,6 +29,8 @@ exports.base = {
 		boxShadow: "5px 5px",
 		margin: "10px",
 		border: "1px solid",
+		marginLeft: "auto",
+		marginRight: "auto",
 	},
 	input: {
 		font: "inherit",
