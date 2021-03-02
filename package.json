@@ -1,7 +1,7 @@
 {
 	"name": "latex-tailwind",
 	"description": "A Tailwind CSS plugin for automatically styling plain HTML content with defaults to look like a LaTeX document",
-	"version": "2.2.0",
+	"version": "2.2.1",
 	"license": "MIT",
 	"repository": {
 		"type": "git",
@@ -18,22 +18,21 @@
 	],
 	"main": "./plugin/index.js",
 	"peerDependencies": {
-		"tailwindcss": "^2.0.1"
+		"tailwindcss": "^2.0.3"
 	},
 	"devDependencies": {
+		"@mapbox/rehype-prism": "^0.6.0",
 		"@mdx-js/loader": "^1.6.22",
-		"@next/mdx": "^10.0.4",
-		"autoprefixer": "^10.0.4",
-		"next": "^10.0.3",
-		"postcss": "^8.2.1",
+		"@next/mdx": "^10.0.7",
+		"autoprefixer": "^10.2.4",
+		"next": "^10.0.7",
+		"postcss": "^8.2.6",
 		"postcss-import": "^14.0.0",
 		"react": "^17.0.1",
 		"react-dom": "^17.0.1",
 		"rehype-katex": "^4.0.0",
+		"remark-footnotes": "^3.0.0",
 		"remark-math": "^3.0.1",
-		"tailwindcss": "^2.0.1",
-		"@mapbox/rehype-prism": "^0.5.0",
-		"latex-tailwind-syntax": "^1.0.0",
-		"remark-footnotes": "^3.0.0"
+		"tailwindcss": "2.0.3"
 	}
 }
